@@ -49,17 +49,19 @@ def rotate_ports(FILENAME, NEWFILENAME):
 def main():
     import argparse
     
-    help_header = "\n" \
+    help_header = "\n\n" \
+                  "================================================\n" \
                   "Converts port numbering of S4P touchstone file.\n"\
                   "\n" \
-                  "Example:\n" \
-                  "python rotate.py filename.s4p"\
+                  "Example:\n\n" \
+                  "python rotate.py filename.s4p\n"\
                   "\n" \
-                  "or," \
+                  "or,\n" \
                   "\n" \
-                  "python rotate.py filename.s4p --newfile foo.s4p" \
+                  "python rotate.py filename.s4p --newfile foo.s4p\n" \
                   "\n\n" \
-                  "luis.boluna@keysight.com"
+                  "Version 1.0    ---    luis.boluna@keysight.com\n"\
+                  "================================================\n\n"
 
     parser = argparse.ArgumentParser(help_header)
     parser.add_argument('file', metavar = 'file', type=str, help = "The filename of the touchstone S4P file")
